@@ -1,1 +1,0 @@
-typedef struct config_line_s config_line_t;

@@ -2,6 +2,18 @@
  * “ут объ€влены общие используемые типы
  */
 
+#pragma once
+
+/**
+ * Union of basic types.
+ */
+typedef union anytype_s {
+    void* ptr;
+    long i;
+    unsigned long ui;
+    double fl;
+} anytype_t;
+
 typedef signed char		int8;
 typedef short			int16;
 typedef int				int32;
