@@ -73,12 +73,42 @@ void* hash_table_enter(hash_table_t *h, /**< In: Handle of hash table in which t
     );
 
 /**
+ * Add a new entry with given key and value to hash table h.  If the
+ * key already exists, its value is replaced with the given value, and
+ * the previous value is returned, otherwise val is returned.
+ *
+ * A very important but subtle point: The key pointer in the hash
+ * table is <b>replaced</b> with the pointer passed to this function.
+ * In general you should always pass a pointer to hash_table_enter()
+ * whose lifetime matches or exceeds that of the hash table.  In some
+ * rare cases it is convenient to initially enter a value with a
+ * short-lived key, then later replace that with a long-lived one.
+ * This behaviour allows this to happen.
+ */
+void *hash_table_replace(hash_table_t *h, /**< In: Handle of hash table in which to create entry */
+                         const char *key, /**< In: C-style NULL-terminated key string
+                                             for the new entry */
+                         void *val	  /**< In: Value to be associated with above key */
+    );
+
+/**
  * Build a linked-list of valid hash_entry_t pointers from the given hash table.  Return the list.
  */
 llist_t hash_table_tolist(hash_table_t *h,	/**< In: Hash table from which list is to be generated */
                           int32 *count		/**< Out: Number of entries in the list.
                                                    If this is NULL, no count will be returned. */
 
+	);
+
+/**
+ * Look up a key in a hash table and optionally return the associated
+ * value.
+ * @return 0 if key found in hash table, else -1.
+ */
+int32 hash_table_lookup(hash_table_t *h,	/**< In: Handle of hash table being searched */
+                        const char *key,	/**< In: C-style NULL-terminated string whose value is sought */
+                        void **val	  	/**< Out: *val = value associated with key.
+                                                   If this is NULL, no value will be returned. */
 	);
 
 /**

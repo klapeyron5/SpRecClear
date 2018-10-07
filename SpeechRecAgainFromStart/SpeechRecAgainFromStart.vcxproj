@@ -66,6 +66,7 @@
   <ItemGroup>
     <ClCompile Include="config.c" />
     <ClCompile Include="decoder.c" />
+    <ClCompile Include="fe_noise.c" />
     <ClCompile Include="hash_table.c" />
     <ClCompile Include="initializer.c" />
     <ClCompile Include="llist.c" />
@@ -73,9 +74,13 @@
     <ClCompile Include="wav_rec.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="acmod.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="decoder.h" />
     <ClInclude Include="fe.h" />
+    <ClInclude Include="fe_internal.h" />
+    <ClInclude Include="fe_noise.h" />
+    <ClInclude Include="fe_type.h" />
     <ClInclude Include="hash_table.h" />
     <ClInclude Include="initializer.h" />
     <ClInclude Include="init_args.h" />

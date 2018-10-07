@@ -12,11 +12,11 @@ decoder_t* dc_init(config_t* config) {
 	dc = calloc(1, sizeof(*dc));
 	dc->refcounter = 1;
 
-
 	return dc;
 }
 
 int dc_reinit(decoder_t *dc, config_t* config) {
+	
 
 	return 0;
 }

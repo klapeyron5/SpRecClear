@@ -248,3 +248,30 @@ void hash_table_free(hash_table_t * h) {
     free((void *) h->table); //TODO
     free((void *) h); //TODO
 }
+
+int32 hash_table_lookup(hash_table_t * h, const char *key, void ** val) {
+    hash_entry_t *entry;
+    uint32 hash;
+    size_t len;
+
+    hash = key2hash(h, key);
+    len = strlen(key);
+
+    entry = lookup(h, hash, key, len);
+    if (entry) {
+        if (val)
+            *val = entry->val;
+        return 0;
+    }
+    else
+        return -1;
+}
+
+void* hash_table_replace(hash_table_t * h, const char *key, void *val) {
+    uint32 hash;
+    size_t len;
+
+    hash = key2hash(h, key);
+    len = strlen(key);
+    return (enter(h, hash, key, len, val, 1));
+}

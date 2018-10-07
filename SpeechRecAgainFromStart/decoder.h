@@ -1,10 +1,18 @@
 #pragma once
 
 #include "config.h"
+#include "acmod.h"
 
 /* Decoder object. */
 struct decoder_s {
+    config_t *config;  /**< Configuration (model pararameters). */
 	int refcounter; /* Reference count. */
+	
+    /* Basic units of computation. */
+    acmod_t *acmod;    /**< Acoustic model. */
+
+    /* Utterance-processing related stuff. */
+    uint32 n_frame;     /**< Total number of frames processed. */
 };
 
 /* Decoder: speech recognizer object. */

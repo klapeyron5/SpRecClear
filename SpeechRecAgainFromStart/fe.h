@@ -5,6 +5,8 @@
  *
  */
 
+#pragma once
+
 #include "prim_type.h"
 #include "init_args.h"
 
@@ -199,3 +201,11 @@ enum {
 	RAW_LOG_SPEC = 1,
 	SMOOTH_LOG_SPEC = 2
 };
+  
+/** MFCC computation type. */
+typedef float32 mfcc_t;
+
+/**
+ * Structure for the front-end computation.
+ */
+typedef struct fe_s fe_t;

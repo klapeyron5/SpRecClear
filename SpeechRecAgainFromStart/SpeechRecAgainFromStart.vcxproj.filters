@@ -30,6 +30,9 @@
     <ClCompile Include="llist.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="fe_noise.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="initializer.h">
@@ -57,6 +60,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="llist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="acmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_noise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_internal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fe_type.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

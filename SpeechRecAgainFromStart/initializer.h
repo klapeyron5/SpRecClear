@@ -11,12 +11,12 @@
 decoder_t* init_dc(void);
 
 /* Minimal set of config-line options for the decoder */
-#define POCKETSPHINX_OPTIONS \
+#define SPEECHREC_OPTIONS \
     waveform_to_cepstral_command_line_macro(), \
-    POCKETSPHINX_DEBUG_OPTIONS
+    SPEECHREC_DEBUG_OPTIONS
 
 /* Options for debugging and logging. */
-#define POCKETSPHINX_DEBUG_OPTIONS                      \
+#define SPEECHREC_DEBUG_OPTIONS                      \
     { "-logfn",                                         \
             ARG_STRING,                                 \
             NULL,                                       \
@@ -38,10 +38,10 @@ decoder_t* init_dc(void);
             NULL,                                       \
             "Directory to log senone score files to" }
 
-#define CMDLN_EMPTY_OPTION { NULL, 0, NULL, NULL }
+#define CONFIG_EMPTY_OPTION { NULL, 0, NULL, NULL }
 
-static const arg_t cont_args_def[] = {
-    POCKETSPHINX_OPTIONS,
+static const arg_t arguments_default[] = {
+    SPEECHREC_OPTIONS,
     {"-argfile",
      ARG_STRING,
      NULL,
@@ -62,5 +62,5 @@ static const arg_t cont_args_def[] = {
      ARG_BOOLEAN,
      "no",
      "Print word times in file transcription."},
-    CMDLN_EMPTY_OPTION
+    CONFIG_EMPTY_OPTION
 };

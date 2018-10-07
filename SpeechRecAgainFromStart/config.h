@@ -30,7 +30,7 @@ typedef struct config_s config_t;
  *       Unpredictable behaviour will result if they are freed or
  *       otherwise become invalidated.
  *
- * @return A cmd_ln_t containing the results of command line parsing,
+ * @return A config_t containing the results of command line parsing,
  *         or NULL on failure.
  **/
 config_t* config_parse_args(config_t *inout_config, /**< In/Out: Previous command-line to update,

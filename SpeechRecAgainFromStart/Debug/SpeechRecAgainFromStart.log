@@ -1,24 +1,12 @@
-﻿Build started 04.10.2018 12:23:04.
+﻿Build started 07.10.2018 18:09:06.
      1>Project "C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\SpeechRecAgainFromStart\SpeechRecAgainFromStart\SpeechRecAgainFromStart.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt config.c decoder.c hash_table.c initializer.c llist.c main.c wav_rec.c
-         wav_rec.c
-         main.c
-         llist.c
-         initializer.c
-         hash_table.c
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\speechrecagainfromstart\speechrecagainfromstart\hash_table.c(101): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\speechrecagainfromstart\speechrecagainfromstart\hash_table.c(117): warning C4018: '<' : signed/unsigned mismatch
-         decoder.c
-         config.c
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\speechrecagainfromstart\speechrecagainfromstart\config.c(23): warning C4101: 'argstart' : unreferenced local variable
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\speechrecagainfromstart\speechrecagainfromstart\config.c(23): warning C4101: 'i' : unreferenced local variable
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\speechrecagainfromstart\speechrecagainfromstart\config.c(23): warning C4101: 'j' : unreferenced local variable
-     1>c:\adocuments\library\clapeyron_ind\speech rec\pocketsphinxlib\speechrecagainfromstart\speechrecagainfromstart\config.c(99): warning C4018: '<' : signed/unsigned mismatch
-         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt fe_noise.c
+         fe_noise.c
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\SpeechRecAgainFromStart\Debug\SpeechRecAgainFromStart.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\SpeechRecAgainFromStart\Debug\SpeechRecAgainFromStart.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Adocuments\Library\Clapeyron_ind\speech rec\pocketsphinxlib\SpeechRecAgainFromStart\Debug\SpeechRecAgainFromStart.lib" /MACHINE:X86 Debug\config.obj
          Debug\decoder.obj
+         Debug\fe_noise.obj
          Debug\hash_table.obj
          Debug\initializer.obj
          Debug\llist.obj
@@ -29,4 +17,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.92
+Time Elapsed 00:00:00.46
